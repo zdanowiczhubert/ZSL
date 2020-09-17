@@ -26,4 +26,68 @@
   echo $x <=> $y;
   $result = $x <=> $y;
   echo $result;
+
+  $x=10;
+  $y=10.0;
+
+  if ($x==$y) {
+    echo 'zmienne są identyczne<br>';
+  }else {
+    'zmienne są nieidentyczne<br>';
+  }
+
+  echo gettype($x); //integer
+  echo gettype($y); //double
+
+#######################################
+
+/*
+preinkrementacja ++$x
+predekrementacja --$xx
+postinkrementacja $x++
+postdekrementacja $x--
+*/
+
+$x=2;
+echo $x; //2
+$x=$x--;
+$x=$x+3;
+echo $x; //5
+$x=$x++;
+echo $x; //5
+$x=++$x;
+echo $x,'<br'; //6
+$y=++$x,;
+$y=++$x*2+3;
+echo $x,"<br>"; //8
+echo $y; <hr>//19
+
+$x=2;
+echo $x++; // 2
+echo ++$x; // 4
+echo $x; // 4
+$y=$x++;
+echo $y; // 4
+$y=++$x;
+echo $y; // 6
+echo ++$y; //7
+
+//operatory rzutowania
+// bool, int, float, string, array, object, date_sunset
+
+$text='123abc';
+$text1=0;
+$text2=20;
+
+echo 'Typ danych $text:',gettype($text),'<br>';
+$x=(int)$text;
+echo $x;
+echo '<br>Typ danych $x',gettype($x),'<br>';
+echo '<br>Typ danych
+$text:',gettype($text),'<br>';
+
+$x=(bool)$text1;
+echo $x; //false
+
+
  ?>
