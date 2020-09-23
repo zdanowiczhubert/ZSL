@@ -6,7 +6,7 @@
   $potega = 2 ** 10;
   echo $potega;
 
-  echo 'a'.'b'.'c'; //a+b+c wyświetli abc
+  echo 'a'.'b'.'c<br>'; //a+b+c wyświetli abc
   echo 'a','b','c'; //wyświetli a, wyświetli b, wyświetli c
 
  // operatory bitowe
